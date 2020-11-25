@@ -9,18 +9,20 @@ body {
     background-color: #525252;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     min-width: 350px;
     width: 350px;
     height: fit-content;
-    margin: 50px auto;
+    margin: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     padding: 1rem;
     overflow: hidden;
     background: white;
+
 }
 
 .card h2{
