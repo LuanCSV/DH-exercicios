@@ -1,16 +1,15 @@
-window.onload = () => {
-    const botaoConverter2 = document.getElementById('converterMtoCM');
 
-    const inputCM2 = document.getElementById('centimetrosEx2');
-    const inputMetros2 = document.getElementById('metrosEx2');
+const botaoConverter2 = document.getElementById('converterMtoCM');
 
-    const converterMetrosToCM = () => {
-        const valorMetros = inputMetros2.value;
+const inputCM2 = document.getElementById('centimetrosEx2');
+const inputMetros2 = document.getElementById('metrosEx2');
 
-        let result = valorMetros * 100;
+const converterMetrosToCM = () => {
+    const valorMetros = inputMetros2.value;
 
-        inputCM2.value = result;
-    }
+    let result = valorMetros * 100;
 
-    botaoConverter2.addEventListener('click', converterMetrosToCM);
+    inputCM2.value = result;
 }
+
+botaoConverter2.addEventListener('click', converterMetrosToCM);

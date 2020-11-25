@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercicios DH</title>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet"> -->
+    <link rel="icon" href="https://br.digitalhouse.com/wp-content/uploads/2018/02/dh-coding-school-logo.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,68 +24,67 @@
         <h2>Exercicio 2</h2>
         <small>Faça um programa que converta metros para centímetros.</small>
         <hr>
-        <input 
-            class="inputEx" 
-            id="metrosEx2" 
-            type="number" 
-            placeholder="Metros (m)"
-        />
+        <input class="inputEx" id="metrosEx2" type="number" placeholder="Metros (m)" />
         <button class="botao" id="converterMtoCM">Converter M to CM</button>
-        <input 
-            class="inputEx"  
-            id="centimetrosEx2" 
-            type="number" 
-            placeholder="Centimetros (cm)" 
-            disabled
-        />
+        <input class="inputEx" id="centimetrosEx2" type="number" placeholder="Centimetros (cm)" disabled />
     </section>
 
     <!-- Exercicio3 -->
     <section class="card">
         <h2>Exercicio 3</h2>
-        <small>Faça um Programa que converta  centímetros  para polegadas.</small>
+        <small>Faça um Programa que converta centímetros para polegadas.</small>
         <hr>
-        <input 
-            class="inputEx" 
-            id="centimetrosEx3" 
-            type="number" 
-            placeholder="Centimetros (cm)"
-        />
+        <input class="inputEx" id="centimetrosEx3" type="number" placeholder="Centimetros (cm)" />
         <button class="botao" id="converterCMtoPolegadas">Converter CM to IN</button>
-        <input 
-            class="inputEx"  
-            id="polegadasEx3" 
-            type="number" 
-            placeholder="Polegadas (in)" 
-            disabled
-        />
+        <input class="inputEx" id="polegadasEx3" type="number" placeholder="Polegadas (in)" disabled />
     </section>
-    
+
     <!-- Exercicio4 -->
     <section class="card">
         <h2>Exercicio 4</h2>
-        <small>Faça um Programa que peça o raio de um círculo, calcule e mostre sua área. <br> Fórmula: <strong>Area = pi * raio²</strong> </small>
+        <small>Faça um Programa que peça o raio de um círculo, calcule e mostre sua área. <br> Fórmula: <strong>Area =
+                pi * raio²</strong> </small>
         <hr>
         <div class="actionEx4">
-            <input 
-                class="inputEx"  
-                id="raioEx4" 
-                type="number" 
-                placeholder="Raio do círculo" 
-            />
+            <input class="inputEx" id="raioEx4" type="number" placeholder="Raio do círculo" />
             <button class="botao" id="calcularAreaEx4">Calcular area</button>
             <div class="circle">
-                <p id="areaEx4" ></p>&nbsp;m²
+                <p id="areaEx4"></p>&nbsp;m²
             </div>
-            <p>A area do seu circulo consiste em aproximadamente: <br> <span id="areaEx4" ></span> m²</p>
-        
+            <p>A area do seu circulo consiste em aproximadamente: <br> A = <span id="areaEx4"></span> m²</p>
+
         </div>
     </section>
 
-    <script src="./1/index.js"></script>
+    <!-- Exercicio5 -->
+    <section class="card">
+        <h2>Exercicio 5</h2>
+        <small>Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius. <br>  Fórmula: <strong> Celsius = (5 * (Farenheit -32) / 9)</strong></small>
+        <hr>
+        <input class="inputEx" id="FarenheitEx5" type="number" placeholder="Farenheit (°F)" />
+        <button class="botao" id="converterFtoC">Converter °F to °C</button>
+        <input class="inputEx" id="CelsiusEx5" type="number" placeholder="Celsius (°C)" disabled />
+    </section>
+
+    <!-- Exercicio6 -->
+    <section class="card">
+        <h2>Exercicio 6</h2>
+        <small>Faça um Programa que peça as 4 notas bimestrais e mostre a média. </small>
+        <hr>
+        <input class="inputEx" id="mediaMateria" type="number" placeholder="Nota 1" />
+        <input class="inputEx" id="mediaMateria" type="number" placeholder="Nota 2" />
+        <input class="inputEx" id="mediaMateria" type="number" placeholder="Nota 3" />
+        <input class="inputEx" id="mediaMateria" type="number" placeholder="Nota 4" />
+        <button class="botao" id="calcularMedia">Calcular Media</button>
+        <input class="inputEx" id="MediaTotal" type="number" placeholder="Media total" disabled />
+    </section>
+
+    <!-- <script src="./1/index.js"></script> -->
     <script src="./2/index.js"></script>
     <script src="./3/index.js"></script>
     <script src="./4/index.js"></script>
+    <script src="./5/index.js"></script>
+    <script src="./6/index.js"></script>
 </body>
 
 </html>

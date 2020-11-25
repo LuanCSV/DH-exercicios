@@ -1,4 +1,4 @@
-window.onload = () => {
+
 
     const inputRaioEx4 = document.getElementById('raioEx4');
 
@@ -22,4 +22,3 @@ window.onload = () => {
 
     botaoCalcularRaio.addEventListener('click', calcularArea);
 
-}

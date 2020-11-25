@@ -12,6 +12,7 @@ body {
 }
 
 .card {
+    min-width: 350px;
     width: 350px;
     height: fit-content;
     margin: 50px auto;
