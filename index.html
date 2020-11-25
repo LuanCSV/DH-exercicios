@@ -24,14 +24,14 @@
         <small>Faça um programa que converta metros para centímetros.</small>
         <hr>
         <input 
-            class="inputEx2" 
+            class="inputEx" 
             id="metrosEx2" 
             type="number" 
             placeholder="Metros (m)"
         />
-        <button class="botao" id="converterMtoCM">Converter</button>
+        <button class="botao" id="converterMtoCM">Converter M to CM</button>
         <input 
-            class="inputEx2"  
+            class="inputEx"  
             id="centimetrosEx2" 
             type="number" 
             placeholder="Centimetros (cm)" 
@@ -45,24 +45,46 @@
         <small>Faça um Programa que converta  centímetros  para polegadas.</small>
         <hr>
         <input 
-            class="inputEx2" 
+            class="inputEx" 
             id="centimetrosEx3" 
             type="number" 
             placeholder="Centimetros (cm)"
         />
-        <button class="botao" id="converterCMtoPolegadas">Converter</button>
+        <button class="botao" id="converterCMtoPolegadas">Converter CM to IN</button>
         <input 
-            class="inputEx2"  
+            class="inputEx"  
             id="polegadasEx3" 
             type="number" 
             placeholder="Polegadas (in)" 
             disabled
         />
     </section>
+    
+    <!-- Exercicio4 -->
+    <section class="card">
+        <h2>Exercicio 4</h2>
+        <small>Faça um Programa que peça o raio de um círculo, calcule e mostre sua área. <br> Fórmula: <strong>Area = pi * raio²</strong> </small>
+        <hr>
+        <div class="actionEx4">
+            <input 
+                class="inputEx"  
+                id="raioEx4" 
+                type="number" 
+                placeholder="Raio do círculo" 
+            />
+            <button class="botao" id="calcularAreaEx4">Calcular area</button>
+            <div class="circle">
+                <p id="areaEx4" ></p>&nbsp;m²
+            </div>
+            <p>A area do seu circulo consiste em aproximadamente: <br> <span id="areaEx4" ></span> m²</p>
+        
+        </div>
+    </section>
 
     <script src="./1/index.js"></script>
     <script src="./2/index.js"></script>
     <script src="./3/index.js"></script>
+    <script src="./4/index.js"></script>
 </body>
 
 </html>
