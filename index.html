@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,61 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Exercicio1 -->
     <section class="card">
         <h2>Exercicio 1</h2>
+        <small>Faça um Programa que peça um número e então mostre a mensagem: O número informado foi [número].</small>
         <hr>
         <p>O número informado foi: <span id="numeroInformado1"></span></p>
     </section>
 
+    <!-- Exercicio2 -->
+    <section class="card">
+        <h2>Exercicio 2</h2>
+        <small>Faça um programa que converta metros para centímetros.</small>
+        <hr>
+        <input 
+            class="inputEx2" 
+            id="metrosEx2" 
+            type="number" 
+            placeholder="Metros (m)"
+        />
+        <button class="botao" id="converterMtoCM">Converter</button>
+        <input 
+            class="inputEx2"  
+            id="centimetrosEx2" 
+            type="number" 
+            placeholder="Centimetros (cm)" 
+            disabled
+        />
+    </section>
+
+    <!-- Exercicio3 -->
+    <section class="card">
+        <h2>Exercicio 3</h2>
+        <small>Faça um Programa que converta  centímetros  para polegadas.</small>
+        <hr>
+        <input 
+            class="inputEx2" 
+            id="centimetrosEx3" 
+            type="number" 
+            placeholder="Centimetros (cm)"
+        />
+        <button class="botao" id="converterCMtoPolegadas">Converter</button>
+        <input 
+            class="inputEx2"  
+            id="polegadasEx3" 
+            type="number" 
+            placeholder="Polegadas (in)" 
+            disabled
+        />
+    </section>
+
     <script src="./1/index.js"></script>
+    <script src="./2/index.js"></script>
+    <script src="./3/index.js"></script>
 </body>
+
 </html>

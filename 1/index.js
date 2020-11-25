@@ -1,13 +1,14 @@
+window.onload = () => {
+    var numero = prompt("Digite um numero");
 
-var numero = prompt("Digite um numero");
+    var spanResult = document.getElementById('numeroInformado1');
 
-var spanResult = document.getElementById('numeroInformado1');
-
-function execute() {
-    while (!numero.match(/^[0-9]*$/)) {
-        numero = prompt("Digite um numero")
+    function execute() {
+        while (!numero.match(/^[0-9]*$/)) {
+            numero = prompt("Digite um numero")
+        }
+        spanResult.textContent = numero;
     }
-    spanResult.textContent = numero;
-}
 
-execute();
+    execute();
+}
