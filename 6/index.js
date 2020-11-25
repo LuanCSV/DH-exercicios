@@ -3,13 +3,13 @@
 const mediasInputs = document.querySelectorAll('#mediaMateria');
 const botaoCalcularMedia = document.querySelector('#calcularMedia');
 const medialTotal = document.getElementById('MediaTotal');
-console.log(mediasInputs)
+// console.log(mediasInputs)
 
 const calcularMedia = () => {
 
     let mediasValores = []
     for (let i of mediasInputs) {
-        console.log(i)
+        // console.log(i)
         mediasValores.push(+i.value);
     }
 
