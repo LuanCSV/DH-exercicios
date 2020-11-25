@@ -52,24 +52,33 @@ body {
     background-color: #242424;
 }
 
+.card label {
+    display: block;
+    text-align: center;
+    margin: auto;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: orangered;
+}
 .card .inputEx{
     border-radius: 10px;
     border: 1px solid #242424;
     display: block;
     width: 50%;
-    margin: 10px auto;
+    margin: 0px auto 10px auto;
     padding: 5px;
     text-align: center;
 }
 
-.card .actionEx4{
+.card .actionEx{
     text-align: center;
 }
-.card .actionEx4 p{
+.card .actionEx p{
     margin: 10px 0px;
 }
 
-.card .actionEx4 .circle{
+.card .actionEx .circle{
     width: 100px;
     height: 100px;
     margin: auto;
@@ -81,4 +90,10 @@ body {
     border-radius: 50%;
 
     transition: background-color ease-in-out 0.6s;
+}
+
+.card .actionEx #opcaoEx8{
+    font-size: 1.5rem;
+    color: #1493dc;
+    font-weight: 700;
 }

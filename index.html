@@ -16,7 +16,7 @@
         <h2>Exercicio 1</h2>
         <small>Faça um Programa que peça um número e então mostre a mensagem: O número informado foi [número].</small>
         <hr>
-        <p>O número informado foi: <span id="numeroInformado1"></span></p>
+        <p>O número informado foi: <input class="inputEx type=" number" disabled id="numeroInformado1"></input></p>
     </section>
 
     <!-- Exercicio2 -->
@@ -24,8 +24,12 @@
         <h2>Exercicio 2</h2>
         <small>Faça um programa que converta metros para centímetros.</small>
         <hr>
+        <label for="metrosEx2">Metros</label>
         <input class="inputEx" id="metrosEx2" type="number" placeholder="Metros (m)" />
+
         <button class="botao" id="converterMtoCM">Converter M to CM</button>
+
+        <label for="centimetrosEx2">Centimetros</label>
         <input class="inputEx" id="centimetrosEx2" type="number" placeholder="Centimetros (cm)" disabled />
     </section>
 
@@ -34,8 +38,11 @@
         <h2>Exercicio 3</h2>
         <small>Faça um Programa que converta centímetros para polegadas.</small>
         <hr>
+        <label for="centimetrosEx3">Centimetros</label>
         <input class="inputEx" id="centimetrosEx3" type="number" placeholder="Centimetros (cm)" />
         <button class="botao" id="converterCMtoPolegadas">Converter CM to IN</button>
+
+        <label for="polegadasEx3">Polegadas</label>
         <input class="inputEx" id="polegadasEx3" type="number" placeholder="Polegadas (in)" disabled />
     </section>
 
@@ -45,7 +52,8 @@
         <small>Faça um Programa que peça o raio de um círculo, calcule e mostre sua área. <br> Fórmula: <strong>Area =
                 pi * raio²</strong> </small>
         <hr>
-        <div class="actionEx4">
+        <div class="actionEx">
+            <label for="raioEx4">Raio</label>
             <input class="inputEx" id="raioEx4" type="number" placeholder="Raio do círculo" />
             <button class="botao" id="calcularAreaEx4">Calcular area</button>
             <div class="circle">
@@ -62,8 +70,10 @@
         <small>Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus
             Celsius. <br> Fórmula: <strong> Celsius = (5 * (Farenheit -32) / 9)</strong></small>
         <hr>
+        <label for="FarenheitEx5">Farenheit</label>
         <input class="inputEx" id="FarenheitEx5" type="number" placeholder="Farenheit (°F)" />
         <button class="botao" id="converterFtoC">Converter °F to °C</button>
+        <label for="CelsiusEx5">Celsius</label>
         <input class="inputEx" id="CelsiusEx5" type="number" placeholder="Celsius (°C)" disabled />
     </section>
 
@@ -72,11 +82,16 @@
         <h2>Exercicio 6</h2>
         <small>Faça um Programa que peça as 4 notas bimestrais e mostre a média. </small>
         <hr>
+        <label>Nota 1</label>
         <input class="inputEx" id="mediaMateria" type="number" placeholder="Nota 1" />
+        <label>Nota 2</label>
         <input class="inputEx" id="mediaMateria" type="number" placeholder="Nota 2" />
+        <label>Nota 3</label>
         <input class="inputEx" id="mediaMateria" type="number" placeholder="Nota 3" />
+        <label>Nota 4</label>
         <input class="inputEx" id="mediaMateria" type="number" placeholder="Nota 4" />
         <button class="botao" id="calcularMedia">Calcular Media</button>
+        <label>Media</label>
         <input class="inputEx" id="MediaTotal" type="number" placeholder="Media total" disabled />
     </section>
 
@@ -86,9 +101,28 @@
         <small>Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Farenheit. <br>
             Fórmula : <strong>Farenheit = Celsius × 1,8 + 32</strong></small>
         <hr>
+        <label for="CelsiusEx7">Celsius</label>
         <input class="inputEx" id="CelsiusEx7" type="number" placeholder="Celsius (°C)" />
         <button class="botao" id="converterCtoF">Converter °C to °F</button>
+        <label for="FarenheitEx7">Farenheit</label>
         <input class="inputEx" id="FarenheitEx7" type="number" placeholder="Farenheit (°F)" disabled />
+    </section>
+
+    <!-- Exercicio8 -->
+    <section class="card">
+        <h2>Exercicio 8</h2>
+        <small>Faça um programa que peça o valor da gasolina e do álcool de um posto e diga qual é o combustível mais
+            vantajoso abastecer, sabendo que somente é vantagem abastecer álcool se o preço do mesmo é menor ou igual a
+            70% do valor da gasolina.</small>
+        <hr>
+        <div class="actionEx">
+            <label for="inputGasosa8">Valor da gasolina</label>
+            <input class="inputEx" id="inputGasosa8" type="number" placeholder="Gasolina Preço (R$)">
+            <label for="inputAlcool8">Valor do alcool</label>
+            <input class="inputEx" id="inputAlcool8"type="number" placeholder="Alcool Preço (R$)">
+            <button id="calcularMelhor8" class="botao">Calcular melhor opção</button>
+            <p>A melhor opção entre gasolina e alcool nessa situação é: <br><span id="opcaoEx8"></span></p>
+        </div>
     </section>
 
     <script src="./index.js" type="module"></script>
@@ -99,6 +133,7 @@
     <script src="./5/index.js"></script>
     <script src="./6/index.js"></script>
     <script src="./7/index.js"></script>
+    <script src="./8/index.js"></script>
 </body>
 
 </html>

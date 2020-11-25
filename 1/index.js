@@ -7,7 +7,7 @@ window.onload = () => {
         while (!numero.match(/^[0-9]*$/)) {
             numero = prompt("Digite um numero")
         }
-        spanResult.textContent = numero;
+        spanResult.value = numero;
     }
 
     execute();
